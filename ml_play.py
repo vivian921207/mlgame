@@ -81,8 +81,6 @@ class MLPlay:
             else:
                 x=(y-400)*a
             return x
-        elif a==0:
-            return x2
         else:
             y=y1-a*(x1-200)
             if y>=400:
