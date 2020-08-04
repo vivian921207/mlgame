@@ -70,7 +70,10 @@ class MLPlay:
         x2=current_ball[0]
         y1=previous_ball[1]
         y2=current_ball[1]
-        a=(x1-x2)/(y1-y2)
+        if (y1-y2)!=0:
+            a=(x1-x2)/(y1-y2)
+        else:
+            a=0
         direction=getDirection(previous_ball, current_ball)
         if direction==3:
             y=y1-a*x1
