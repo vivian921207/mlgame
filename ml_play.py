@@ -40,8 +40,8 @@ class MLPlay:
             # 3.Return Command
             command = self.getCommand(scene_info["platform"][0], predict)
 
-        self.previous_ball = current_ball
-        return command
+          self.previous_ball = current_ball
+          return command
 
     def getDirection(self, previous_ball, current_ball):
         if previous_ball[0]-current_ball[0]>0:
