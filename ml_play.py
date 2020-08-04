@@ -65,7 +65,7 @@ class MLPlay:
         # TODO
         return 3
 
-    def predictFalling_x(previous_ball, current_ball):
+    def predictFalling_x(self,previous_ball, current_ball):
         x1=previous_ball[0]
         x2=current_ball[0]
         y1=previous_ball[1]
