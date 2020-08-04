@@ -32,7 +32,6 @@ class MLPlay:
             predict = 100
             if direction <= 2:  # 球正在往上不判斷落點
                 pass
-            if 
             else:  # 球正在往下，判斷球的落點
                 # 2.Predict Falling X
                 predict = self.predictFalling_x(self.previous_ball, current_ball)
