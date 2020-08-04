@@ -74,14 +74,15 @@ class MLPlay:
             a=(x1-x2)/(y1-y2)
         else:
             a=0
-        direction=getDirection(previous_ball, current_ball)
-        if direction==3:
+        if a<0:
             y=y1-a*x1
             if y>=400:
                 x=x1-(y1-400)/a
             else:
                 x=(y-400)*a
             return x
+        elif a==0:
+            return x2
         else:
             y=y1-a*(x1-200)
             if y>=400:
